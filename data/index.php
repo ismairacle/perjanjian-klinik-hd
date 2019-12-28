@@ -84,7 +84,7 @@ $retval = $conn->query($sql);
 while($row = $retval->fetch_array(MYSQLI_ASSOC))
 {
 	$created_at = $row['created_at'];
-	$nama = $row['nama'];
+	$nama = $row['nama']; 
 	$noaims = $row['noaims'];
 	$id_majelis = $row['id_majelis'];
 	$nominal = $row['nominal'];
