@@ -62,7 +62,7 @@
 <div class="modal-content">
         <div class="modal-header">
  <center><img src="img/LOGO-MKAI.png" style="width:230px;height:60px;"></center>
-<h3 align="center">Formulir Perjanjian Pembangunan</br>Klinik Hemodialisis</h3>
+<h3 align="center">Formulir Perjanjian Pembangunan</br>Klinik Haemodialisis</h3>
 <center><small>Periode Perjanjian Nov 2019 - Okt 2020</small></center>
 </br>
 <form name ="input_form" id="myForm" action="kirim.php" method="POST">
