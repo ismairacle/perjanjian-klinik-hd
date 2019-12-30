@@ -2,10 +2,10 @@
 
 function open_db()
 {
-	$dbhost = "localhost";	
+	$dbhost = "latihan.mesincerdas.xyz";	
 	$dbuser = "root";		
-	$dbpass = "";			
-	$db = "simple-form"; 
+	$dbpass = "mkaizindabad";			
+	$db = "ismail_db"; 
 	
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
 
