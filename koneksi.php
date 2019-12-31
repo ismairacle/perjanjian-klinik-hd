@@ -2,7 +2,7 @@
 
 function open_db()
 {
-	$dbhost = "latihan.mesincerdas.xyz";	
+	$dbhost = "localhost";	
 	$dbuser = "root";		
 	$dbpass = "mkaizindabad";			
 	$db = "ismail_db"; 
