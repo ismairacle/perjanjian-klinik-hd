@@ -97,8 +97,11 @@ while($row = $retval->fetch_array(MYSQLI_ASSOC))
 	
 	$nominal = number_format($nominal,0,'.',',');
 	
-	echo "<tr><td>$i</td><td>$created_at</td><td>$nama</td><td>$noaims</td><td>$majelis</td> <td>Rp. $penghasilan</td> <td>Rp. $nominal</td> <td> <a href='form-edit.php'>Edit</a> | </tr>";
+	echo "<tr><td>$i</td><td>$created_at</td><td>$nama</td><td>$noaims</td><td>$majelis</td> <td>Rp. $penghasilan</td> <td>Rp. $nominal</td> 
+
+	<td> <a href='edit.php'>Edit</a> | <a href='hapus.php?id=".$row['id']."'>Hapus</a> </tr>";
 	
+
 	$i++;
 }
 

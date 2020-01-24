@@ -4,7 +4,7 @@ function open_db()
 {
 	$dbhost = "localhost";	
 	$dbuser = "root";		
-	$dbpass = "mkaizindabad";			
+	$dbpass = "";			
 	$db = "ismail_db"; 
 	
 	$conn = new mysqli($dbhost, $dbuser, $dbpass, $db) or die("Connect failed: %s\n". $conn -> error);
