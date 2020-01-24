@@ -78,7 +78,7 @@ echo "<h4>Total Nominal : Rp. $jml_nominal</h4></center>";
 
 
 echo "<div style='overflow-x:auto;'><table>";
-echo "<tr><th>No</th><th>Timestamp</th><th>Nama</th><th>No AIMS</th><th>Majelis</th> <th>Penghasilan</th>   <th>Nominal Perjanjian</th></tr>";
+echo "<tr><th>No</th><th>Timestamp</th><th>Nama</th><th>No AIMS</th><th>Majelis</th> <th>Penghasilan</th>   <th>Nominal Perjanjian</th> <th>Aksi</th> </tr>";
 $sql = "SELECT * FROM list_pejanji ORDER BY created_at DESC";
 $retval = $conn->query($sql);
 while($row = $retval->fetch_array(MYSQLI_ASSOC))
@@ -97,7 +97,7 @@ while($row = $retval->fetch_array(MYSQLI_ASSOC))
 	
 	$nominal = number_format($nominal,0,'.',',');
 	
-	echo "<tr><td>$i</td><td>$created_at</td><td>$nama</td><td>$noaims</td><td>$majelis</td> <td>Rp. $penghasilan</td> <td>Rp. $nominal</td></tr>";
+	echo "<tr><td>$i</td><td>$created_at</td><td>$nama</td><td>$noaims</td><td>$majelis</td> <td>Rp. $penghasilan</td> <td>Rp. $nominal</td> <td> <a href='form-edit.php'>Edit</a> | </tr>";
 	
 	$i++;
 }
