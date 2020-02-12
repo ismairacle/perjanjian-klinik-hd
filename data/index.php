@@ -53,6 +53,9 @@
 
 <div class="modal-content">
 <div class="modal-header">
+
+
+<a href="hapus.php?id=<?php echo $data['id']; ?>">Hapus</a>
 <?php
 
 include "../koneksi.php";
@@ -96,10 +99,12 @@ while($row = $retval->fetch_array(MYSQLI_ASSOC))
 	$majelis = $row2['majelis'];
 	
 	$nominal = number_format($nominal,0,'.',',');
-	
+
+	$id = $row["id"];
 	echo "<tr><td>$i</td><td>$created_at</td><td>$nama</td><td>$noaims</td><td>$majelis</td> <td>Rp. $penghasilan</td> <td>Rp. $nominal</td> 
 
-	<td> <a href='edit.php'>Edit</a> | <a href='hapus.php?id=".$row['id']."'>Hapus</a> </tr>";
+	
+	<td> <a href='edit.php?id=".$id."'>Edit</a> | <a href='hapus.php?id=".$id."'>Hapus</a> </td> </tr>";
 	
 
 	$i++;

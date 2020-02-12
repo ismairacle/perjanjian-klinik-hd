@@ -1,24 +1,17 @@
 <?php 
 
-require 'function.php';
+include '../koneksi.php';
 
 $id = $_GET["id"];
 
-if ( hapus($id) > 0) {
-    echo "
-        <script>
-            alert('data berhasil dihapus!');
-            document.location.href = 'index.php';
-        </script>
-    ";
-} else {
-    echo "
-        <script>
-            alert('data gagal dihapus!');
-            document.location.href = 'index.php';
-        </script>
-    ";
-}
+$conn = open_db();
+
+$query_hapus = "DELETE FROM list_pejanji WHERE id=$id";
+$result = $conn->query($query_hapus);
+
+header("location:index.php");
+
+close_db($conn);
     
     
 

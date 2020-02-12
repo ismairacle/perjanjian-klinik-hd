@@ -100,6 +100,8 @@
 				echo "<option value='$id'> $majelis </option>";
 			}
 			
+
+			
 			close_db($conn);
 
 		?>
